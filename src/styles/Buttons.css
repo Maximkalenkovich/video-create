@@ -1,0 +1,24 @@
+.button-upload,
+.button,
+.theme-toggle {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.button-upload:hover,
+.button:hover,
+.theme-toggle:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.button:disabled {
+  background-color: #9ca3af;
+  color: #000000;
+  cursor: not-allowed;
+}

@@ -1,0 +1,62 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --container-bg: #f0f0f0;
+  --button-bg: #3b82f6;
+  --button-text: #ffffff;
+  --button-hover-bg: #2563eb;
+  --timeline-bg: #e5e7eb;
+  --timeline-selection: rgba(96, 165, 250, 0.5);
+  --timeline-marker: #ef4444;
+  --timeline-handle: #1d4ed8;
+  --input-border: #d1d5db;
+  --label-color: #6b7280;
+}
+
+.dark-theme {
+  --background-color: #1a1a2e;
+  --text-color: #e0e0e0;
+  --container-bg: #2a2a3e;
+  --button-bg: #4a6cfa;
+  --button-text: #ffffff;
+  --button-hover-bg: #3b55e6;
+  --timeline-bg: #3a3a4e;
+  --timeline-selection: rgba(100, 149, 237, 0.5);
+  --timeline-marker: #ff6b6b;
+  --timeline-handle: #6495ed;
+  --input-border: #4a4a6e;
+  --label-color: #a0a0b0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: inherit;
+}
+
+@media (max-width: 600px) {
+  .control-row {
+    max-width: 100%;
+    flex-wrap: wrap; 
+  }
+  .video-player {
+    max-height: 40vh;
+  }
+  .header-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
