@@ -6,7 +6,7 @@ import { UploadButton } from "./UploadButton";
 interface Props {
   onFileChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
-
+console.log('342342424234')
 export const Header = ({ onFileChange }: Props) => {
   return (
     <div className="header-controls">
